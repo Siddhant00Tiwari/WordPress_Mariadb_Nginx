@@ -7,7 +7,7 @@
 2. `systemctl enable --now mariadb` : to enable and start the service of mariadb
 3. `mysql_secure_installation` : to start the installation process
     
-    ![mariadb installation.png](mariadb installation.png)
+    ![mariadb installation.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/e626136d5cd994af9115d9e4e497d70267f0b31b/mariadb%20installation.png)
     
 4. `mysql -u root` : to enter the mariadb shell
 5. Then create a database, user and it’s password.
