@@ -12,7 +12,7 @@
 4. `mysql -u root` : to enter the mariadb shell
 5. Then create a database, user and it’s password.
     
-    ![creating mariadb database.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/7b58ada8-62c3-44a0-acb2-0caa8da706ef/creating_mariadb_database.png)
+    ![creating mariadb database.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/creating%20mariadb%20database.png)
     
     `FLUSH PRIVILEDGES;` is used to reload the privilege tables.
     
@@ -21,14 +21,14 @@
 
 1. `dnf install php php-mysqlnd php-fpm` : install the php and mysql extensions
     
-    ![php installation.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/c391ba40-1ee6-4c5a-ab41-41f7ca38b87e/php_installation.png)
+    ![php installation.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/php%20installation.png)
     
 2. `wget https://wordpress.org/latest.tar.gz` : to download the latest wordpress tar file
 3. `tar -xvf latest.tar.gz` : to unzip the tar file
 4. `cp wordpress/wp-config-sample.php wordpress/wp-config.php` : to make a config file 
 5. `vim wordpress/wp-config.php` : to enter the file and edit 
     
-    ![add database.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/0878dc01-9887-48a8-903f-e4eb6943d040/add_database.png)
+    ![add database.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/add%20database.png)
     
     Add the DB_NAME, DB_USER, DB_PASSWORD, DB_HOST in the adjacent value.
     
@@ -45,7 +45,7 @@
 3. `cp wordpress/ /var/www/html/` : to copy the wordpress directory in the document root directory
 4. `vim /etc/httpd/conf.d/vhost.conf` : create a virtual host config file and add
     
-    ![virtual hosting.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/873ec6ce-1491-46e1-af72-3f16e0caeb84/virtual_hosting.png)
+    ![virtual hosting.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/virtual%20hosting.png)
     
 5. `systemctl enable --now httpd` : to enable and start httpd service
 
@@ -54,7 +54,7 @@
 1. `dnf install nginx` : to install nginx server
 2. `vim /etc/nginx/nginx.conf` : add the proxy configuration in the main configuration file
     
-    ![Nginx configuration.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/78525502-9445-422e-b04e-541df5c9e785/Nginx_configuration.png)
+    ![Nginx configuration.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/nginx%20configuration.png)
     
 3. `systemctl enable --now nginx` : to enable and start the nginx server
 
@@ -68,10 +68,10 @@
 
 1. Search for `http://ip_address` in the browser and this page will appear
     
-    ![web installation.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/400073e3-59e4-4525-9a77-2276779c6521/web_installation.png)
+    ![web installation.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/web%20installation.png)
     
     Enter all the required values and press install WordPress
     
 2. The sample web page will appear.
     
-    ![website.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/05b38dcc-b512-4775-871f-f2c24dcaa901/website.png)
+    ![website.png](https://github.com/Siddhant00Tiwari/WordPress_Mariadb_Nginx/blob/f8446f9b950183c03bece2478dbe354bcb9fc6ac/website.png)
