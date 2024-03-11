@@ -17,7 +17,7 @@
     `FLUSH PRIVILEDGES;` is used to reload the privilege tables.
     
 
-### Installing the WordPresss and it’s configuration.
+### Installing the WordPress and it’s configuration.
 
 1. `dnf install php php-mysqlnd php-fpm` : install the php and mysql extensions
     
@@ -66,7 +66,7 @@
 
 ### Access the wordpress website from browser
 
-1. Search for `http://ip_address` in the browser and this ppage will appear
+1. Search for `http://ip_address` in the browser and this page will appear
     
     ![web installation.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/77ead240-a866-4aa1-883b-179fa59f3972/400073e3-59e4-4525-9a77-2276779c6521/web_installation.png)
     
