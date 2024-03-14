@@ -17,7 +17,7 @@
     `FLUSH PRIVILEDGES;` is used to reload the privilege tables.
     
 
-### Installing the WordPress and it’s configuration.
+### Installing the ***WordPress* and it’s configuration.
 
 1. `dnf install php php-mysqlnd php-fpm` : install the php and mysql extensions
     
@@ -33,7 +33,7 @@
     Add the DB_NAME, DB_USER, DB_PASSWORD, DB_HOST in the adjacent value.
     
 
-### Installing and configuring HTTP server
+### Installing and configuring ***HTTP* server
 
 1. `dnf install httpd` : to install http server
 2. `vim /etc/httpd/conf/httpd.conf` : to enter the config file to httpd and change the port to 8080
@@ -49,7 +49,7 @@
     
 5. `systemctl enable --now httpd` : to enable and start httpd service
 
-### Installing and configuring Nginx server
+### Installing and configuring ***Nginx* server
 
 1. `dnf install nginx` : to install nginx server
 2. `vim /etc/nginx/nginx.conf` : add the proxy configuration in the main configuration file
