@@ -1,7 +1,7 @@
 # WordPress_Mariadb_Nginx
 ## WordPress website hosting with Nginx reverse proxy in RHEL instance.
 
-### Installing ***Mariadb* in RHEL**
+### Installing *Mariadb* in RHEL
 
 1. `sudo dnf install mariadb mariadb-server` : use this command to download Mariadb
 2. `systemctl enable --now mariadb` : to enable and start the service of mariadb
